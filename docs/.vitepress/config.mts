@@ -1,28 +1,6 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import data from '../../scripts/data.json' with { type: 'json' }
 
-function buildRedirects() {
-  const rewrites: Record<string, string> = {}
-  
-  const folders = Object.keys(data) as Array<keyof typeof data>
-
-  for (const folder of folders) {
-    // 找到第一个 item
-    const firstItem = data[folder].groups[0]?.items[0];
-    
-    if (firstItem) {
-      const destinationFile = `${folder}/${firstItem.id}.md`;
-      rewrites[destinationFile] = `${folder}/index.md`;
-    }
-  }
-  
-  console.log('--- 动态重写规则 ---');
-  console.log(rewrites);
-  console.log('---------------------');
-  
-  return rewrites;
-}
-
 /**
  * 自动生成侧栏的辅助函数
  */
@@ -114,7 +92,6 @@ export default defineConfig({
       copyright: 'Copyright © 2025 by Xuuyuan'
     }
   },
-  rewrites: buildRedirects(),
   vite: { // 调试
     server: {
       host: '0.0.0.0'

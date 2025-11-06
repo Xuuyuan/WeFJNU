@@ -40,6 +40,27 @@ for (const folder in data) {
       console.log(`  > 成功生成: ${folder}/${item.id}.md`);
     }
   }
+  const firstItem = course.groups[0]?.items[0];
+
+  if (firstItem) {
+    const redirectUrl = `/${folder}/${firstItem.id}.html`;
+    const indexContent = `---
+layout: home
+---
+<script setup>
+import { onMounted } from 'vue';
+import { useRouter } from 'vitepress';
+onMounted(() => {
+  const router = useRouter();
+  router.go('${redirectUrl}');
+});
+</script>
+<div style="text-align: center; padding: 2rem;">正在跳转...</div>
+`;
+    const indexPath = path.join(outputDir, 'index.md');
+    fs.writeFileSync(indexPath, indexContent, 'utf8');
+    console.log(`  > 成功生成重定向页: ${folder}/index.md -> ${redirectUrl}`);
+  }
 }
 
 console.log('全部页面生成完毕！');
