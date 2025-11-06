@@ -1,0 +1,9 @@
+# 依赖
+node_modules
+
+# VitePress 缓存和构建输出
+docs/.vitepress/cache
+docs/.vitepress/dist
+
+# 操作系统文件
+.DS_Store

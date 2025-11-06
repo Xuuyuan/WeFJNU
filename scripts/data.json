@@ -1,0 +1,243 @@
+{
+  "mathA": {
+    "title": "高等数学A",
+    "groups": [
+  {
+    "text": "期中考试试卷",
+    "items": [
+      {
+        "id": "24-25-1-mathA-mid-key-rubric",
+        "title": "24-25(上) 评分标准",
+        "pdfLink": "/pdfs/mathA/24-25-1-mathA-mid-key-rubric.pdf"
+      },
+      {
+        "id": "23-24-1-mathA-mid-key-rubric",
+        "title": "23-24(上) 评分标准",
+        "pdfLink": "/pdfs/mathA/23-24-1-mathA-mid-key-rubric.pdf"
+      },
+      {
+        "id": "20-21-1-mathA-mid-paper",
+        "title": "20-21(上) 原卷",
+        "pdfLink": "/pdfs/mathA/20-21-1-mathA-mid-paper.pdf"
+      },
+      {
+        "id": "24-25-2-mathA-mid-key-rubric",
+        "title": "24-25(下) 评分标准",
+        "pdfLink": "/pdfs/mathA/24-25-2-mathA-mid-key-rubric.pdf"
+      },
+      {
+        "id": "23-24-2-mathA-mid-paper",
+        "title": "23-24(下) 原卷",
+        "pdfLink": "/pdfs/mathA/23-24-2-mathA-mid-paper.pdf"
+      },
+      {
+        "id": "22-23-2-mathA-mid-paper",
+        "title": "22-23(下) 原卷",
+        "pdfLink": "/pdfs/mathA/22-23-2-mathA-mid-paper.pdf"
+      }
+    ]
+  },
+  {
+    "text": "期末考试试卷",
+    "items": [
+          {
+            "id": "23-24-1-mathA-final-A-paper",
+            "title": "23-24(上)A卷 原卷",
+            "pdfLink": "/pdfs/mathA/23-24-1-mathA-final-A-paper.pdf"
+          },
+          {
+            "id": "23-24-1-mathA-final-B-key-rubric",
+            "title": "23-24(上)B卷 评分标准",
+            "pdfLink": "/pdfs/mathA/23-24-1-mathA-final-B-key-rubric.pdf"
+          },
+          {
+            "id": "22-23-1-mathA-final-B-paper",
+            "title": "22-23(上)B卷 原卷",
+            "pdfLink": "/pdfs/mathA/22-23-1-mathA-final-B-paper.pdf"
+          },
+          {
+            "id": "22-23-1-mathA-final-A-key-rubric",
+            "title": "22-23(上)A卷 评分标准",
+            "pdfLink": "/pdfs/mathA/22-23-1-mathA-final-A-key-rubric.pdf"
+          },
+          {
+            "id": "22-23-1-mathA-final-B-key-rubric",
+            "title": "22-23(上)B卷 评分标准",
+            "pdfLink": "/pdfs/mathA/22-23-1-mathA-final-B-key-rubric.pdf"
+          },
+          {
+            "id": "21-22-1-mathA-final-A-key-rubric",
+            "title": "21-22(上)A卷 评分标准",
+            "pdfLink": "/pdfs/mathA/21-22-1-mathA-final-A-key-rubric.pdf"
+          },
+          {
+            "id": "21-22-1-mathA-final-B-key-rubric",
+            "title": "21-22(上)B卷 评分标准",
+            "pdfLink": "/pdfs/mathA/21-22-1-mathA-final-B-key-rubric.pdf"
+          },
+          {
+            "id": "20-21-1-mathA-final-A-key-rubric",
+            "title": "20-21(上)A卷 评分标准",
+            "pdfLink": "/pdfs/mathA/20-21-1-mathA-final-A-key-rubric.pdf"
+          },
+          {
+            "id": "20-21-1-mathA-final-B-key-rubric",
+            "title": "20-21(上)B卷 评分标准",
+            "pdfLink": "/pdfs/mathA/20-21-1-mathA-final-B-key-rubric.pdf"
+          },
+          {
+            "id": "23-24-2-mathA-final-B-paper",
+            "title": "23-24(下)B卷 原卷",
+            "pdfLink": "/pdfs/mathA/23-24-2-mathA-final-B-paper.pdf"
+          },
+          {
+            "id": "22-23-2-mathA-final-A-paper",
+            "title": "22-23(下)A卷 原卷",
+            "pdfLink": "/pdfs/mathA/22-23-2-mathA-final-A-paper.pdf"
+          },
+          {
+            "id": "22-23-2-mathA-final-C-key-rubric",
+            "title": "22-23(下)C卷 评分标准",
+            "pdfLink": "/pdfs/mathA/22-23-2-mathA-final-C-key-rubric.pdf"
+          },
+          {
+            "id": "21-22-2-mathA-final-A-key-rubric",
+            "title": "21-22(下)A卷 评分标准",
+            "pdfLink": "/pdfs/mathA/21-22-2-mathA-final-A-key-rubric.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "mathB": {
+    "title": "高等数学B",
+    "groups": [
+      {
+        "text": "期中考试试卷",
+        "items": [
+          { "id": "24-25-1-mathB-mid-paper", "title": "24-25(上) 原卷", "pdfLink": "/pdfs/mathB/24-25-1-mathB-mid-paper.pdf" },
+          { "id": "23-24-1-mathB-mid-paper", "title": "23-24(上) 原卷", "pdfLink": "/pdfs/mathB/23-24-1-mathB-mid-paper.pdf" },
+          { "id": "24-25-2-mathB-mid-paper", "title": "24-25(下) 原卷", "pdfLink": "/pdfs/mathB/24-25-2-mathB-mid-paper.pdf" },
+          { "id": "24-25-2-mathB-mid-key-rubric", "title": "24-25(下) 评分标准", "pdfLink": "/pdfs/mathB/24-25-2-mathB-mid-key-rubric.pdf" },
+          { "id": "23-24-2-mathB-mid-paper", "title": "23-24(下) 原卷", "pdfLink": "/pdfs/mathB/23-24-2-mathB-mid-paper.pdf" },
+          { "id": "22-23-2-mathB-mid-paper", "title": "22-23(下) 原卷", "pdfLink": "/pdfs/mathB/22-23-2-mathB-mid-paper.pdf" }
+        ]
+      },
+      {
+        "text": "期末考试试卷",
+        "items": [
+          { "id": "24-25-1-mathB-final-B-paper(memorized)", "title": "24-25(上)B卷 原卷回忆版", "pdfLink": "/pdfs/mathB/24-25-1-mathB-final-B-paper(memorized).pdf" },
+          { "id": "23-24-1-mathB-final-A-paper", "title": "23-24(上)A卷 原卷", "pdfLink": "/pdfs/mathB/23-24-1-mathB-final-A-paper.pdf" },
+          { "id": "23-24-1-mathB-final-A-key-rubric", "title": "23-24(上)A卷 评分标准", "pdfLink": "/pdfs/mathB/23-24-1-mathB-final-A-key-rubric.pdf" },
+          { "id": "23-24-1-mathB-final-C-paper", "title": "23-24(上)C卷 原卷", "pdfLink": "/pdfs/mathB/23-24-1-mathB-final-C-paper.pdf" },
+          { "id": "22-23-1-mathB-final-A-paper", "title": "22-23(上)A卷 原卷", "pdfLink": "/pdfs/mathB/22-23-1-mathB-final-A-paper.pdf" },
+          { "id": "21-22-1-mathB-final-A-paper", "title": "21-22(上)A卷 原卷", "pdfLink": "/pdfs/mathB/21-22-1-mathB-final-A-paper.pdf" },
+          { "id": "21-22-1-mathB-final-A-key-rubric", "title": "21-22(上)A卷 评分标准", "pdfLink": "/pdfs/mathB/21-22-1-mathB-final-A-key-rubric.pdf" },
+
+          { "id": "23-24-2-mathB-final-A-paper", "title": "23-24(下)A卷 原卷", "pdfLink": "/pdfs/mathB/23-24-2-mathB-final-A-paper.pdf" },
+          { "id": "23-24-2-mathB-final-A-key-rubric", "title": "23-24(下)A卷 评分标准", "pdfLink": "/pdfs/mathB/23-24-2-mathB-final-A-key-rubric.pdf" },
+          { "id": "22-23-2-mathB-final-B-paper", "title": "22-23(下)B卷 原卷", "pdfLink": "/pdfs/mathB/22-23-2-mathB-final-B-paper.pdf" },
+          { "id": "22-23-2-mathB-final-B-key-rubric", "title": "22-23(下)B卷 评分标准", "pdfLink": "/pdfs/mathB/22-23-2-mathB-final-B-key-rubric.pdf" },
+          { "id": "21-22-2-mathB-final-A-paper", "title": "21-22(下)A卷 原卷", "pdfLink": "/pdfs/mathB/21-22-2-mathB-final-A-paper.pdf" },
+          { "id": "21-22-2-mathB-final-A-key-rubric", "title": "21-22(下)A卷 评分标准", "pdfLink": "/pdfs/mathB/21-22-2-mathB-final-A-key-rubric.pdf" }
+          
+        ]
+      }
+    ]
+  },
+  "linear-algebra": {
+    "title": "线性代数",
+    "groups": [
+  {
+    "text": "期中考试试卷",
+    "items": [
+          {
+            "id": "24-25-2-linear-algebra-mid-paper",
+            "title": "24-25-2 原卷",
+            "pdfLink": "/pdfs/linear-algebra/24-25-2-linear-algebra-mid-paper.pdf"
+          },
+          {
+            "id": "24-25-2-linear-algebra-mid-key",
+            "title": "24-25-2 答案",
+            "pdfLink": "/pdfs/linear-algebra/24-25-2-linear-algebra-mid-key.pdf"
+          },
+          {
+            "id": "24-25-1-linear-algebra-mid-paper",
+            "title": "24-25-1 原卷",
+            "pdfLink": "/pdfs/linear-algebra/24-25-1-linear-algebra-mid-paper.pdf"
+          },
+          {
+            "id": "24-25-1-linear-algebra-mid-key",
+            "title": "24-25-1 答案",
+            "pdfLink": "/pdfs/linear-algebra/24-25-1-linear-algebra-mid-key.pdf"
+          },
+          {
+            "id": "22-23-2-linear-algebra-mid-paper",
+            "title": "22-23-2 原卷",
+            "pdfLink": "/pdfs/linear-algebra/22-23-2-linear-algebra-mid-paper.pdf"
+          },
+          {
+            "id": "22-23-2-linear-algebra-mid-key",
+            "title": "22-23-2 答案",
+            "pdfLink": "/pdfs/linear-algebra/22-23-2-linear-algebra-mid-key.pdf"
+          },
+          {
+            "id": "20-21-1-linear-algebra-mid-key",
+            "title": "20-21-1 答案",
+            "pdfLink": "/pdfs/linear-algebra/20-21-1-linear-algebra-mid-key.pdf"
+          }
+        ]
+      },
+      {
+        "text": "期末考试试卷",
+        "items": [
+          {
+            "id": "24-25-2-linear-algebra-final-A-paper(memorized)",
+            "title": "24-25-2 A卷 原卷回忆版",
+            "pdfLink": "/pdfs/linear-algebra/24-25-2-linear-algebra-final-A-paper(memorized).pdf"
+          },
+          {
+            "id": "22-23-1-linear-algebra-final-A-paper",
+            "title": "22-23-1 A卷 原卷",
+            "pdfLink": "/pdfs/linear-algebra/22-23-1-linear-algebra-final-A-paper.pdf"
+          },
+          {
+            "id": "21-22-1-linear-algebra-final-A-paper",
+            "title": "21-22-1 A卷 原卷",
+            "pdfLink": "/pdfs/linear-algebra/21-22-1-linear-algebra-final-A-paper.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "probability-theory": {
+    "title": "概率论与数理统计",
+    "groups": [
+  {
+    "text": "期中考试试卷",
+    "items": [
+          {
+            "id": "24-25-1-probability-theory-mid-paper",
+            "title": "24-25-1 原卷",
+            "pdfLink": "/pdfs/probability-theory/24-25-1-probability-theory-mid-paper.pdf"
+          },
+          {
+            "id": "24-25-1-probability-theory-mid-key",
+            "title": "24-25-1 答案",
+            "pdfLink": "/pdfs/probability-theory/24-25-1-probability-theory-mid-key.pdf"
+          },
+          {
+            "id": "22-23-1-probability-theory-mid-paper",
+            "title": "22-23-1 原卷",
+            "pdfLink": "/pdfs/probability-theory/22-23-1-probability-theory-mid-paper.pdf"
+          },
+          {
+            "id": "21-22-1-probability-theory-mid-key",
+            "title": "21-22-1 答案",
+            "pdfLink": "/pdfs/probability-theory/21-22-1-probability-theory-mid-key.pdf"
+          }
+        ]
+      }
+    ]
+  }
+}
