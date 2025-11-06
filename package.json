@@ -6,7 +6,7 @@
   "scripts": {
     "copy-worker": "cpy node_modules/pdfjs-dist/legacy/build/pdf.worker.min.mjs docs/public/assets/pdfjs --flat",
     "docs:dev": "npm run copy-worker && vitepress dev docs",
-    "docs:build": "npm run copy-worker && vitepress build docs",
+    "docs:build": "npm run copy-worker && vitepress build docs --force",
     "docs:preview": "vitepress preview docs",
     "generate": "node scripts/generate-pages.js"
   },
