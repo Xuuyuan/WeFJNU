@@ -21,6 +21,11 @@ features:
   - title: 体育理论
     details: 《大学体育（一）》公共体育理论考试题库
     link: /sport/
-
+  - title: 大学英语四级真题
+    details: 由 WeHUSTER 提供的四级真题题库
+    link: https://www.wehuster.com/cet4
+  - title: 大学英语六级真题
+    details: 由 WeHUSTER 提供的六级真题题库
+    link: https://www.wehuster.com/cet6
 ---
 

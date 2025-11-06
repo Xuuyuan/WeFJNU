@@ -6,9 +6,19 @@
     "text": "期中考试试卷",
     "items": [
       {
+        "id": "24-25-1-mathA-mid-paper",
+        "title": "24-25(上) 原卷",
+        "pdfLink": "/pdfs/mathA/24-25-1-mathA-mid-paper.pdf"
+      },
+      {
         "id": "24-25-1-mathA-mid-key-rubric",
         "title": "24-25(上) 评分标准",
         "pdfLink": "/pdfs/mathA/24-25-1-mathA-mid-key-rubric.pdf"
+      },
+      {
+        "id": "23-24-1-mathA-mid-paper",
+        "title": "23-24(上) 原卷",
+        "pdfLink": "/pdfs/mathA/23-24-1-mathA-mid-paper.pdf"
       },
       {
         "id": "23-24-1-mathA-mid-key-rubric",
@@ -19,6 +29,11 @@
         "id": "20-21-1-mathA-mid-paper",
         "title": "20-21(上) 原卷",
         "pdfLink": "/pdfs/mathA/20-21-1-mathA-mid-paper.pdf"
+      },
+      {
+        "id": "24-25-2-mathA-mid-paper",
+        "title": "24-25(下) 原卷",
+        "pdfLink": "/pdfs/mathA/24-25-2-mathA-mid-paper.pdf"
       },
       {
         "id": "24-25-2-mathA-mid-key-rubric",
