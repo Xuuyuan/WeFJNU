@@ -9,4 +9,6 @@ aside: false
   点击下载PDF文件
 </a>
 
-<PDFPreview src="{{PDF_LINK}}" />
+<ClientOnly>
+  <PDFPreview src="{{PDF_LINK}}" />
+</ClientOnly>

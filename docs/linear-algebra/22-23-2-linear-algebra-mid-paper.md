@@ -9,4 +9,6 @@ aside: false
   点击下载PDF文件
 </a>
 
-<PDFPreview src="/pdfs/linear-algebra/22-23-2-linear-algebra-mid-paper.pdf" />
+<ClientOnly>
+  <PDFPreview src="/pdfs/linear-algebra/22-23-2-linear-algebra-mid-paper.pdf" />
+</ClientOnly>

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 // --- 配置路径 ---
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const rootDir = path.join(__dirname, '..'); // 根目录 (WeFJNUER/)
+const rootDir = path.join(__dirname, '..');
 const dataPath = path.join(__dirname, 'data.json');
 const templatePath = path.join(__dirname, 'template.md');
 // -----------------

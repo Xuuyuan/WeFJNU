@@ -9,4 +9,6 @@ aside: false
   点击下载PDF文件
 </a>
 
-<PDFPreview src="/pdfs/mathA/22-23-1-mathA-final-B-paper.pdf" />
+<ClientOnly>
+  <PDFPreview src="/pdfs/mathA/22-23-1-mathA-final-B-paper.pdf" />
+</ClientOnly>

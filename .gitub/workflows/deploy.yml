@@ -1,0 +1,58 @@
+# .github/workflows/deploy.yml
+name: Build and Deploy to Aliyun
+
+# 触发条件：当推送到 'main' 分支时
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # 使用最新的 Ubuntu 环境
+
+    steps:
+      # 1. 检出你的代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 安装 Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # 使用 Node.js 18
+          cache: 'npm' # 缓存 npm 依赖
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. 运行页面生成脚本
+      - name: Generate pages from data
+        run: npm run generate
+
+      # 5. 构建 VitePress 网站
+      - name: Build website
+        run: npm run docs:build
+
+      # 6. 安装阿里云 CLI
+      - name: Install Aliyun CLI
+        uses: aliyun/setup-cli@v1
+        with:
+          access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          region: cn-hangzhou 
+
+      # 7. 同步文件到 OSS
+      - name: Sync built files to OSS
+        run: |
+          aliyun oss sync ./docs/.vitepress/dist/ oss://${{ secrets.OSS_BUCKET_NAME }}/ \
+            --endpoint ${{ secrets.OSS_BUCKET_ENDPOINT }} \
+            --delete
+
+      # 8. 刷新 CDN 缓存
+      - name: Purge CDN Cache
+        run: |
+          aliyun cdn RefreshObjectCaches \
+            --object-path "http://${{ secrets.CDN_DOMAIN }}/" \
+            --object-type "Directory"

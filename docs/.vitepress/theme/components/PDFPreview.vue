@@ -12,14 +12,9 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import * as pdfjsLib from 'pdfjs-dist'
+// 【关键】除了 inBrowser，我们还导入 withBase
+import { inBrowser, withBase } from 'vitepress'
 
-// ⬇️ 1. 从你安装的包中导入 worker，`?url` 是 Vite 的魔法
-import pdfWorker from 'pdfjs-dist/build/pdf.worker.mjs?url'
-
-// ⬇️ 2. 将 workerSrc 设置为 Vite 自动生成的 URL
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker
-// 定义组件 props，接收来自 Markdown 的 'src'
 const props = defineProps({
   src: {
     type: String,
@@ -29,10 +24,12 @@ const props = defineProps({
 
 const loading = ref(true)
 const pdfError = ref(null)
-const pdfContainer = ref(null) // 引用模板中的 div
+const pdfContainer = ref(null)
 
-onMounted(() => {
-  loadPdf()
+onMounted(async () => {
+  if (inBrowser) {
+    await loadPdf()
+  }
 })
 
 async function loadPdf() {
@@ -40,25 +37,28 @@ async function loadPdf() {
     loading.value = true
     pdfError.value = null
 
+    const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf')
+    
+    // 【最终方案】
+    // 我们不再 import worker 文件，而是直接构建它的 URL 字符串。
+    // withBase 会处理好部署在子目录下的情况，确保路径永远正确。
+    pdfjsLib.GlobalWorkerOptions.workerSrc = withBase('/assets/pdfjs/pdf.worker.min.mjs')
+
     const pdf = await pdfjsLib.getDocument(props.src).promise
     const numPages = pdf.numPages
 
-    // 循环渲染所有页面
     for (let i = 1; i <= numPages; i++) {
       const page = await pdf.getPage(i)
-      
-      // 设置缩放
-      const viewport = page.getViewport({ scale: 1.5 }) 
+      const viewport = page.getViewport({ scale: 1.5 })
 
       const canvas = document.createElement('canvas')
       const context = canvas.getContext('2d')
       canvas.height = viewport.height
       canvas.width = viewport.width
-      canvas.style.margin = '10px 0' // 页面间距
-      canvas.style.maxWidth = '100%' // 响应式
+      canvas.style.margin = '10px 0'
+      canvas.style.maxWidth = '100%'
       canvas.style.height = 'auto'
 
-      // 将 canvas 添加到容器中
       pdfContainer.value.appendChild(canvas)
 
       const renderContext = {
@@ -67,19 +67,19 @@ async function loadPdf() {
       }
       await page.render(renderContext).promise
     }
-    
-    loading.value = false
   } catch (error) {
     console.error('PDF.js 加载失败:', error)
     pdfError.value = error.message
+  } finally {
     loading.value = false
   }
 }
 </script>
 
 <style scoped>
+/* 样式部分保持不变 */
 .pdf-preview-container {
-  overflow: hidden; /* 确保子元素不会溢出圆角 */
+  overflow: hidden;
 }
 .pdf-loading, .pdf-error {
   padding: 40px;
@@ -91,8 +91,7 @@ async function loadPdf() {
   color: #e53935;
 }
 .pdf-render-area {
-  padding: 10px; /* 内部留白 */
-  /* 确保 canvas 可以在内部居中（如果它没有占满100%）*/
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

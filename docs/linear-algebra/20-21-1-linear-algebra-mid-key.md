@@ -9,4 +9,6 @@ aside: false
   点击下载PDF文件
 </a>
 
-<PDFPreview src="/pdfs/linear-algebra/20-21-1-linear-algebra-mid-key.pdf" />
+<ClientOnly>
+  <PDFPreview src="/pdfs/linear-algebra/20-21-1-linear-algebra-mid-key.pdf" />
+</ClientOnly>

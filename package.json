@@ -1,12 +1,12 @@
 {
-  "name": "wefjnuer",
+  "name": "wefjnu",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "copy-worker": "cpy node_modules/pdfjs-dist/legacy/build/pdf.worker.min.mjs docs/public/assets/pdfjs --flat",
+    "docs:dev": "npm run copy-worker && vitepress dev docs",
+    "docs:build": "npm run copy-worker && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "generate": "node scripts/generate-pages.js"
   },
@@ -15,6 +15,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "cpy-cli": "^6.0.0",
     "vitepress": "^1.6.4"
   },
   "dependencies": {

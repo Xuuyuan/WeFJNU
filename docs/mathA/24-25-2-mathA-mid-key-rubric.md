@@ -9,4 +9,6 @@ aside: false
   点击下载PDF文件
 </a>
 
-<PDFPreview src="/pdfs/mathA/24-25-2-mathA-mid-key-rubric.pdf" />
+<ClientOnly>
+  <PDFPreview src="/pdfs/mathA/24-25-2-mathA-mid-key-rubric.pdf" />
+</ClientOnly>

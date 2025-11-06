@@ -9,4 +9,6 @@ aside: false
   点击下载PDF文件
 </a>
 
-<PDFPreview src="/pdfs/probability-theory/21-22-1-probability-theory-mid-key.pdf" />
+<ClientOnly>
+  <PDFPreview src="/pdfs/probability-theory/21-22-1-probability-theory-mid-key.pdf" />
+</ClientOnly>
