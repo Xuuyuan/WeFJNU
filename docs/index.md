@@ -27,5 +27,11 @@ features:
   - title: 大学英语六级真题
     details: 由 WeHUSTER 提供的六级真题题库
     link: https://www.wehuster.com/cet6
+  - title: 高等数学C
+    details: 数学与统计学院 开设的公共课
+    link: /mathC/
+  - title: 高等数学D
+    details: 数学与统计学院 开设的公共课
+    link: /mathD/
 ---
 

@@ -6,7 +6,7 @@ import { onMounted } from 'vue';
 import { useRouter } from 'vitepress';
 onMounted(() => {
   const router = useRouter();
-  router.go('/probability-theory/24-25-1-probability-theory-mid-paper.html');
+  router.go('/probability-theory/25-26-1-probability-theory-mid-paper.html');
 });
 </script>
 <div style="text-align: center; padding: 2rem;">正在跳转...</div>

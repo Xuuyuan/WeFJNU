@@ -78,6 +78,8 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: '高数A', link: '/mathA/' },
       { text: '高数B', link: '/mathB/' },
+      { text: '高数C', link: '/mathC/' },
+      { text: '高数D', link: '/mathD/' },
       { text: '线性代数', link: '/linear-algebra/' },
       { text: '概率论', link: '/probability-theory/' },
       { text: '体育理论', link: '/sport/' },
