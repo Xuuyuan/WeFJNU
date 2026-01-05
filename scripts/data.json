@@ -61,9 +61,34 @@
         "text": "期末考试试卷",
         "items": [
           {
+            "id": "24-25-1-mathA-final-A-paper",
+            "title": "24-25(上)A卷 原卷",
+            "pdfLink": "/pdfs/mathA/24-25-1-mathA-final-A-paper.pdf"
+          },
+          {
+            "id": "24-25-1-mathA-final-A-key-rubric",
+            "title": "24-25(上)A卷 评分标准",
+            "pdfLink": "/pdfs/mathA/24-25-1-mathA-final-A-key-rubric.pdf"
+          },
+          {
+            "id": "24-25-1-mathA-final-B-paper",
+            "title": "24-25(上)B卷 原卷",
+            "pdfLink": "/pdfs/mathA/24-25-1-mathA-final-B-paper.pdf"
+          },
+          {
+            "id": "24-25-1-mathA-final-B-key-rubric",
+            "title": "24-25(上)B卷 评分标准",
+            "pdfLink": "/pdfs/mathA/24-25-1-mathA-final-B-key-rubric.pdf"
+          },
+          {
             "id": "23-24-1-mathA-final-A-paper",
             "title": "23-24(上)A卷 原卷",
             "pdfLink": "/pdfs/mathA/23-24-1-mathA-final-A-paper.pdf"
+          },
+          {
+            "id": "23-24-1-mathA-final-B-paper",
+            "title": "23-24(上)B卷 原卷",
+            "pdfLink": "/pdfs/mathA/23-24-1-mathA-final-B-paper.pdf"
           },
           {
             "id": "23-24-1-mathA-final-B-key-rubric",
@@ -96,9 +121,19 @@
             "pdfLink": "/pdfs/mathA/21-22-1-mathA-final-B-key-rubric.pdf"
           },
           {
+            "id": "20-21-1-mathA-final-A-paper",
+            "title": "20-21(上)A卷 原卷",
+            "pdfLink": "/pdfs/mathA/20-21-1-mathA-final-A-paper.pdf"
+          },
+          {
             "id": "20-21-1-mathA-final-A-key-rubric",
             "title": "20-21(上)A卷 评分标准",
             "pdfLink": "/pdfs/mathA/20-21-1-mathA-final-A-key-rubric.pdf"
+          },
+          {
+            "id": "20-21-1-mathA-final-A-key-rubric-ver2",
+            "title": "20-21(上)A卷（二） 评分标准",
+            "pdfLink": "/pdfs/mathA/20-21-1-mathA-final-A-key-rubric-ver2.pdf"
           },
           {
             "id": "20-21-1-mathA-final-B-key-rubric",
@@ -124,6 +159,11 @@
             "id": "21-22-2-mathA-final-A-key-rubric",
             "title": "21-22(下)A卷 评分标准",
             "pdfLink": "/pdfs/mathA/21-22-2-mathA-final-A-key-rubric.pdf"
+          },
+          {
+            "id": "18-19-2-mathA-final-B-key-rubric",
+            "title": "18-19(下)B卷 评分标准",
+            "pdfLink": "/pdfs/mathA/18-19-2-mathA-final-B-key-rubric.pdf"
           }
         ]
       }
