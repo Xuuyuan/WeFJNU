@@ -301,6 +301,21 @@
             "pdfLink": "/pdfs/mathC/25-26-1-mathC-mid-paper.pdf"
           }
         ]
+      },
+      {
+        "text": "期末考试试卷",
+        "items": [
+          {
+            "id": "24-25-1-mathC-final-A-paper",
+            "title": "24-25(上)A卷 原卷",
+            "pdfLink": "/pdfs/mathC/24-25-1-mathC-final-A-paper.pdf"
+          },
+          {
+            "id": "23-24-1-mathC-final-A-paper",
+            "title": "23-24(上)A卷 原卷",
+            "pdfLink": "/pdfs/mathC/23-24-1-mathC-final-A-paper.pdf"
+          }
+        ]
       }
     ]
   },
