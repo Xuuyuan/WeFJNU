@@ -442,8 +442,18 @@
         "items": [
           {
             "id": "22-23-1-probability-theory-final-A-paper",
-            "title": "22-23-1 A卷 原卷（部分）",
+            "title": "22-23-1 A卷 原卷",
             "pdfLink": "/pdfs/probability-theory/22-23-1-probability-theory-final-A-paper.pdf"
+          },
+          {
+            "id": "21-22-1-probability-theory-final-A-paper",
+            "title": "21-22-1 A卷 原卷",
+            "pdfLink": "/pdfs/probability-theory/21-22-1-probability-theory-final-A-paper.pdf"
+          },
+          {
+            "id": "20-21-1-probability-theory-final-A-paper",
+            "title": "20-21-1 A卷 答案",
+            "pdfLink": "/pdfs/probability-theory/20-21-1-probability-theory-final-A-key-rubric.pdf"
           },
           {
             "id": "19-20-1-probability-theory-final-A-paper",
