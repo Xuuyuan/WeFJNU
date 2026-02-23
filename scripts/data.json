@@ -61,6 +61,16 @@
         "text": "期末考试试卷",
         "items": [
           {
+            "id": "25-26-1-mathA-final-A-paper",
+            "title": "25-26(上)A卷 原卷",
+            "pdfLink": "/pdfs/mathA/25-26-1-mathA-final-A-paper.pdf"
+          },
+          {
+            "id": "25-26-1-mathA-final-A-key-rubric",
+            "title": "25-26(上)A卷 评分标准",
+            "pdfLink": "/pdfs/mathA/25-26-1-mathA-final-A-key-rubric.pdf"
+          },
+          {
             "id": "24-25-1-mathA-final-A-paper",
             "title": "24-25(上)A卷 原卷",
             "pdfLink": "/pdfs/mathA/24-25-1-mathA-final-A-paper.pdf"
