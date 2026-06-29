@@ -161,6 +161,11 @@
             "pdfLink": "/pdfs/mathA/20-21-1-mathA-final-B-key-rubric.pdf"
           },
           {
+            "id": "25-26-2-mathA-final-B-paper",
+            "title": "25-26(下)B卷 原卷",
+            "pdfLink": "/pdfs/mathA/25-26-2-mathA-final-B-paper.pdf"
+          },
+          {
             "id": "23-24-2-mathA-final-B-paper",
             "title": "23-24(下)B卷 原卷",
             "pdfLink": "/pdfs/mathA/23-24-2-mathA-final-B-paper.pdf"
@@ -464,6 +469,11 @@
             "id": "25-26-2-probability-theory-mid-paper",
             "title": "25-26-2 原卷",
             "pdfLink": "/pdfs/probability-theory/25-26-2-probability-theory-mid-paper.pdf"
+          },
+          {
+            "id": "25-26-2-probability-theory-mid-key",
+            "title": "25-26-2 答案",
+            "pdfLink": "/pdfs/probability-theory/25-26-2-probability-theory-mid-key-rubric.pdf"
           },
           {
             "id": "25-26-1-probability-theory-mid-paper",
