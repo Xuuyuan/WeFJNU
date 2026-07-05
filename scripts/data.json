@@ -446,6 +446,11 @@
         "text": "期末考试试卷",
         "items": [
           {
+            "id": "25-26-1-linear-algebra-final-A-paper",
+            "title": "25-26-1 A卷 原卷",
+            "pdfLink": "/pdfs/linear-algebra/25-26-1-linear-algebra-final-A-paper.pdf"
+          },
+          {
             "id": "24-25-2-linear-algebra-final-A-paper(memorized)",
             "title": "24-25-2 A卷 原卷回忆版",
             "pdfLink": "/pdfs/linear-algebra/24-25-2-linear-algebra-final-A-paper(memorized).pdf"
