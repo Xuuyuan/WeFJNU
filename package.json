@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "copy-worker": "cpy node_modules/pdfjs-dist/legacy/build/pdf.worker.min.mjs docs/public/assets/pdfjs --flat",
+    "copy-worker": "cpy node_modules/pdfjs-dist/legacy/build/pdf.worker.min.mjs docs/public/assets/pdfjs --flat && cpy \"node_modules/pdfjs-dist/cmaps/*\" docs/public/assets/pdfjs/cmaps --flat && cpy \"node_modules/pdfjs-dist/standard_fonts/*\" docs/public/assets/pdfjs/standard_fonts --flat",
     "docs:dev": "npm run copy-worker && vitepress dev docs",
     "docs:build": "npm run copy-worker && vitepress build docs --force",
     "docs:preview": "vitepress preview docs",

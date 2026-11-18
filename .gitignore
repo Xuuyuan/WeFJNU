@@ -4,6 +4,8 @@ node_modules
 # VitePress 缓存和构建输出
 docs/.vitepress/cache
 docs/.vitepress/dist
+docs/public/assets/pdfjs/cmaps
+docs/public/assets/pdfjs/standard_fonts
 
 # 操作系统文件
 .DS_Store

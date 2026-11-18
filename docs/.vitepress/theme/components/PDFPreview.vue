@@ -44,7 +44,12 @@ async function loadPdf() {
     // withBase 会处理好部署在子目录下的情况，确保路径永远正确。
     pdfjsLib.GlobalWorkerOptions.workerSrc = withBase('/assets/pdfjs/pdf.worker.min.mjs')
 
-    const pdf = await pdfjsLib.getDocument(props.src).promise
+    const pdf = await pdfjsLib.getDocument({
+      url: withBase(props.src),
+      cMapUrl: withBase('/assets/pdfjs/cmaps/'),
+      cMapPacked: true,
+      standardFontDataUrl: withBase('/assets/pdfjs/standard_fonts/')
+    }).promise
     const numPages = pdf.numPages
 
     for (let i = 1; i <= numPages; i++) {
