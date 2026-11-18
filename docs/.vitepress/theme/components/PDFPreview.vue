@@ -12,7 +12,6 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-// 【关键】除了 inBrowser，我们还导入 withBase
 import { inBrowser, withBase } from 'vitepress'
 
 const props = defineProps({
@@ -37,11 +36,11 @@ async function loadPdf() {
     loading.value = true
     pdfError.value = null
 
+    if (pdfContainer.value) {
+      pdfContainer.value.innerHTML = ''
+    }
+
     const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf')
-    
-    // 【最终方案】
-    // 我们不再 import worker 文件，而是直接构建它的 URL 字符串。
-    // withBase 会处理好部署在子目录下的情况，确保路径永远正确。
     pdfjsLib.GlobalWorkerOptions.workerSrc = withBase('/assets/pdfjs/pdf.worker.min.mjs')
 
     const pdf = await pdfjsLib.getDocument({
@@ -52,23 +51,40 @@ async function loadPdf() {
     }).promise
     const numPages = pdf.numPages
 
+    const containerWidth = pdfContainer.value?.clientWidth
+      ? Math.min(pdfContainer.value.clientWidth - 20, 960)
+      : 860
+    const dpr = Math.min(Math.max(window.devicePixelRatio || 1, 2), 3)
+
     for (let i = 1; i <= numPages; i++) {
       const page = await pdf.getPage(i)
-      const viewport = page.getViewport({ scale: 1.5 })
+      const unscaledViewport = page.getViewport({ scale: 1 })
+      const cssScale = Math.max(containerWidth / unscaledViewport.width, 1.2)
+      const viewport = page.getViewport({ scale: cssScale })
+      const outputScale = dpr
 
       const canvas = document.createElement('canvas')
       const context = canvas.getContext('2d')
-      canvas.height = viewport.height
-      canvas.width = viewport.width
-      canvas.style.margin = '10px 0'
-      canvas.style.maxWidth = '100%'
+
+      canvas.width = Math.floor(viewport.width * outputScale)
+      canvas.height = Math.floor(viewport.height * outputScale)
+      canvas.style.width = `${Math.floor(viewport.width)}px`
       canvas.style.height = 'auto'
+      canvas.style.maxWidth = '100%'
+      canvas.style.margin = '10px 0'
+      canvas.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.12)'
+      canvas.style.borderRadius = '4px'
 
       pdfContainer.value.appendChild(canvas)
 
+      const transform = outputScale !== 1
+        ? [outputScale, 0, 0, outputScale, 0, 0]
+        : null
+
       const renderContext = {
         canvasContext: context,
-        viewport: viewport
+        transform,
+        viewport
       }
       await page.render(renderContext).promise
     }
@@ -82,7 +98,6 @@ async function loadPdf() {
 </script>
 
 <style scoped>
-/* 样式部分保持不变 */
 .pdf-preview-container {
   overflow: hidden;
 }
