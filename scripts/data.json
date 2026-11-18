@@ -501,6 +501,16 @@
         "text": "期中考试试卷",
         "items": [
           {
+            "id": "26-27-1-probability-theory-mid-paper",
+            "title": "26-27-1 原卷",
+            "pdfLink": "/pdfs/probability-theory/26-27-1-probability-theory-mid-paper.pdf"
+          },
+          {
+            "id": "26-27-1-probability-theory-mid-key",
+            "title": "26-27-1 答案（AI）",
+            "pdfLink": "/pdfs/probability-theory/26-27-1-probability-theory-mid-key-rubric.pdf"
+          },
+          {
             "id": "25-26-2-probability-theory-mid-paper",
             "title": "25-26-2 原卷",
             "pdfLink": "/pdfs/probability-theory/25-26-2-probability-theory-mid-paper.pdf"
