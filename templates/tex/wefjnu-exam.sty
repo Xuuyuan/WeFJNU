@@ -1,0 +1,75 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{wefjnu-exam}[WeFJNU exam layout]
+\RequirePackage{amsmath,amssymb,geometry,enumitem,fancyhdr,xcolor,needspace}
+\RequirePackage[hidelinks]{hyperref}
+
+\geometry{margin=23mm,headheight=15pt,footskip=12mm}
+\linespread{1.16}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\setlength{\emergencystretch}{2em}
+\setlist[enumerate]{label=\arabic*.,leftmargin=2em,itemsep=0.5em,topsep=0.3em}
+\allowdisplaybreaks[1]
+
+\newcommand{\wefjnufooter}{%
+  \fancyhf{}%
+  \fancyfoot[L]{\footnotesize\color[gray]{0.42}\href{https://wefjnu.nekoark.com}{WeFJNU}}%
+  \fancyfoot[C]{\small 第 \thepage\ 页}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+\fancypagestyle{wefjnu}{\wefjnufooter}
+\fancypagestyle{plain}{\wefjnufooter}
+\pagestyle{wefjnu}
+
+% 可选标题字号、学年学期、完整标题。标题同时写入 PDF 元数据。
+\newcommand{\wefjnutitle}[3][2]{%
+  \hypersetup{pdftitle={#3}}%
+  \begingroup\centering
+  {\normalsize\textbf{福建师范大学数学与统计学院}\enspace\textbar\enspace #2\par}%
+  \smallskip
+  {\zihao{#1}\bfseries #3\par}%
+  \endgroup\smallskip
+}
+
+% 每个参数是一列的信息，从左到右、从上到下。
+\newcommand{\wefjnumeta}[4]{%
+  \begingroup\centering\small
+  \begin{tabular}{@{}l@{\hspace{2em}}l@{}}
+    #1 & #2\\
+    #3 & #4
+  \end{tabular}\par
+  \endgroup\smallskip
+}
+\newcommand{\wefjnuinfo}[1]{%
+  {\centering\small #1\par}%
+}
+
+% 答案标题，含卷别时保留卷别。
+\newcommand{\wefjnukeytitle}[1]{%
+  \hypersetup{pdftitle={#1}}%
+  {\centering\zihao{3}\bfseries #1\par}%
+  \smallskip
+}
+
+% 在已知考试信息下方标注实际使用的模型。
+\newcommand{\wefjnuaisource}[1]{%
+  \wefjnuinfo{\textbf{答案由 AI 生成（#1）}}%
+}
+
+\newcommand{\wefjnusection}[1]{%
+  \par\Needspace{3\baselineskip}\medskip{\zihao{4}\bfseries #1}\par
+}
+\newcommand{\wefjnuquestion}[2]{\wefjnusection{#1、（#2 分）}}
+\newcommand{\wefjnuanswer}[1]{\textbf{答案}\enspace #1}
+\newcommand{\wefjnuwork}{\par\smallskip\textbf{解析}\enspace}
+\newcommand{\wefjnuoptionblank}{（\hspace{1.8em}）}
+\newcommand{\wefjnuanswerblank}{\rule[-0.15ex]{4em}{0.45pt}}
+\newcommand{\wefjnuoptions}[4]{%
+  \par\smallskip
+  \begin{minipage}{\linewidth}
+    \begin{tabular}{@{}p{0.48\linewidth}@{\hspace{0.04\linewidth}}p{0.48\linewidth}@{}}
+      A.\ #1 & B.\ #2\\[0.25em]
+      C.\ #3 & D.\ #4
+    \end{tabular}
+  \end{minipage}\par
+}

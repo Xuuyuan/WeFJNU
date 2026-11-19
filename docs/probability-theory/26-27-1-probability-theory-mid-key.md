@@ -5,10 +5,10 @@ aside: false
 
 页面归属：概率论与数理统计 / 期中考试试卷
 
-<a class="vp-button" href="/pdfs/probability-theory/26-27-1-probability-theory-mid-key-rubric.pdf" download="【概率论与数理统计(期中考试试卷)】26-27-1 答案（AI）.pdf" style="text-decoration: none">
+<a class="vp-button" href="/pdfs/probability-theory/26-27-1-probability-theory-mid-key.pdf" download="【概率论与数理统计(期中考试试卷)】26-27-1 答案（AI）.pdf" style="text-decoration: none">
   点击下载PDF文件
 </a>
 
 <ClientOnly>
-  <PDFPreview src="/pdfs/probability-theory/26-27-1-probability-theory-mid-key-rubric.pdf" />
+  <PDFPreview src="/pdfs/probability-theory/26-27-1-probability-theory-mid-key.pdf" />
 </ClientOnly>
